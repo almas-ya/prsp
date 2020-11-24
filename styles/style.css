@@ -1,0 +1,268 @@
+@import "font.css";
+
+:root {
+    --white: #fff;
+    --blue: #00A3FF;
+    --dark_blue: #162dff;
+    --black: #000;
+    --opacity: rgb(0, 0, 0, 0.7);
+    --fMR: 'MR';
+    --fMM: 'MM';
+    --fMB: 'MB';
+    --fPS: 'PS';
+}
+body{
+    color: var(--white);
+    background: var(--black);
+    font-family: var(--fMR), sans-serif;
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.title{
+    text-transform: uppercase;
+    font-family: var(--fMB), sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* ============================================================= START HEADER =============================================================  */
+.header{
+    margin-bottom: 50px;
+}
+.header__logo{
+    color: var(--white);
+    font-family: var(--fMB), sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+.header__logo:hover{
+    color: var(--white);
+}
+.navbar{
+    padding: 0;
+    margin-top: 20px;
+}
+.menu-link{
+    font-family: var(--fMR), sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    margin-left: 40px;
+}
+.menu-link:hover{
+    color: var(--blue);
+}
+.navbar-toggler > i{
+    color: var(--white);
+    font-size: 27px;
+}
+.header-title{
+    font-family: var(--fMB), sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.title__color{
+    text-transform: uppercase;
+    color: var(--blue);
+}
+.header-description{
+    font-family: var(--fMR), sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 491px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.header-btn{
+    font-family: var(--fMR), sans-serif;
+    font-weight: 400;
+    font-size: 18px;  
+    transition: 0.3s;
+    border: 2px solid #fff;
+    padding: 13px 22px;
+}
+.header-btn:hover {
+    color: var(--black);
+    background: var(--white);
+}
+.header-img{
+    width: 470px;
+    height: 470px;
+    object-fit: cover;
+}
+/* ============================================================= FINISH HEADER ============================================================  */
+
+/* ============================================================= START MAIN ===============================================================  */
+
+/* ============================================================= START PORTFOLIO ==========================================================  */
+.portfolio{
+    margin-bottom: 50px;
+}
+.portfolio__block-first{
+    margin-bottom: 30px;
+}
+.portfolio__img{
+    width: 800px;
+    height: 440px;
+    object-fit: cover;
+    margin: auto;
+}
+.slider__btn{
+    font-size: 50px;
+}
+.look {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+    color: var(--white);
+    background: var(--opacity);
+    transition: 0.2s;
+    opacity: 0;
+}
+.look:hover {
+    opacity: 1;
+}
+.work-btn{
+    font-family: var(--fMR), sans-serif;
+    font-weight: 400;
+    font-size: 18px;  
+    transition: 0.3s;
+    border: 2px solid #fff;
+    padding: 13px 22px;
+    margin: 50px auto;
+    display: inline-block;
+    transition: 0.5s;
+}
+.work-btn:hover{
+    background: var(--white);
+    color: var(--black);
+}
+/* ============================================================= FINISH PORTFOLIO =========================================================  */
+
+/* ============================================================= START ABOUT_ME ===========================================================  */
+.about__me{
+    margin-bottom: 70px;
+}
+.about__content-info{
+    margin: 30px 0 50px 0;
+}
+.about__line{
+    background: var(--white);
+    max-width: 60px;
+    width: 100%;
+    height: 2px;
+    margin-right: 20px;
+}
+.about__info-description{
+    font-family: var(--fMR), sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 520px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: -15px;
+}
+/* ============================================================= FINISH ABOUT_ME ==========================================================  */
+
+/* ============================================================= START WORK ===============================================================  */
+.work{
+    margin-bottom: 460px;
+}
+.work__item {
+    max-width: 350px;
+    width: 100%;
+    height: 360px;
+    position: relative;
+    background: linear-gradient(#00A3FF,#001AFF);
+    margin-bottom: 40px;
+}
+.work__content-info{
+    text-transform: uppercase;
+    font-family: var(--fMM), sans-serif;
+    font-weight: 500;
+    font-size: 25px; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 20px 30px;
+    margin-bottom: 0;
+}
+.work__content-description {
+    position: absolute;
+    top: 84px;
+    left: 28px;
+    right: 28px;
+    font-family: var(--fMM), sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0;
+    transition: 0.5s;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.work__item:hover .work__content-description {
+    opacity: 1;
+    color: var(--white);
+    background: var(--dark_blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 84px 28px 0 28px;
+}
+.work__item:hover .work__content-info {
+    display: none;
+}
+/* ============================================================= FINISH WORK ==============================================================  */
+
+/* ============================================================= FINISH MAIN ==============================================================  */
+
+/* ============================================================= START FOOTER =============================================================  */
+.footer{
+    margin-bottom: 60px;
+}
+.social{
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.social__img{
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.social__img:hover{
+    transform: scale(1.2);
+}
+.footer__contact-link{
+    text-align: center;
+    font-family: var(--fMM), sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer__contact-link:hover{
+    color: var(--blue);
+}
+/* ============================================================= FINISH FOOTER ============================================================  */
